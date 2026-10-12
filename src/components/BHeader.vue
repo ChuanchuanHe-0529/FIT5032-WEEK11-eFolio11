@@ -22,14 +22,10 @@ const logout = () => {
 </script>
 
 <template>
-  <!-- Using Bootstrap's Header template (starter code) -->
-  <!-- https://getbootstrap.com/docs/5.0/examples/headers/ -->
-
   <div class="container">
     <header class="d-flex justify-content-center py-3">
       <ul class="nav nav-pills">
 
-        <!-- Home -->
         <li class="nav-item">
           <router-link
             to="/"
@@ -41,7 +37,6 @@ const logout = () => {
           </router-link>
         </li>
 
-        <!-- About -->
         <li class="nav-item">
           <router-link
             to="/about"
@@ -52,7 +47,6 @@ const logout = () => {
           </router-link>
         </li>
 
-        <!-- Firebase Sign In -->
         <li class="nav-item">
           <router-link
             to="/firebase-signin"
@@ -63,7 +57,6 @@ const logout = () => {
           </router-link>
         </li>
 
-        <!-- Firebase Register -->
         <li class="nav-item">
           <router-link
             to="/firebase-register"
@@ -74,7 +67,6 @@ const logout = () => {
           </router-link>
         </li>
 
-        <!-- Add Book -->
         <li class="nav-item">
           <router-link
             to="/add-book"
@@ -85,7 +77,6 @@ const logout = () => {
           </router-link>
         </li>
 
-        <!-- Book Counter -->
         <li class="nav-item">
           <router-link
             to="/get-book-count"
@@ -96,7 +87,46 @@ const logout = () => {
           </router-link>
         </li>
 
-        <!-- Log Out -->
+        <li class="nav-item">
+          <router-link
+            to="/current-weather"
+            class="nav-link"
+            active-class="active"
+          >
+            Current Weather
+          </router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link
+            to="/WeatherCheck"
+            class="nav-link"
+            active-class="active"
+          >
+            Get Weather
+          </router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link
+            to="/CountBookAPI"
+            class="nav-link"
+            active-class="active"
+          >
+            Count Book API
+          </router-link>
+        </li>
+
+        <li class="nav-item">
+          <router-link
+            to="/GetAllBookAPI"
+            class="nav-link"
+            active-class="active"
+          >
+            Get All Book API
+          </router-link>
+        </li>
+
         <li class="nav-item">
           <button
             class="nav-link btn btn-link"
