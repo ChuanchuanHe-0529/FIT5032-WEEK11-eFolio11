@@ -1,3 +1,4 @@
+
 import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
@@ -6,10 +7,15 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS === 'true'
+    ? '/FIT5032-WEEK11-eFolio11/'
+    : '/',
+
   plugins: [
     vue(),
     vueDevTools(),
   ],
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
